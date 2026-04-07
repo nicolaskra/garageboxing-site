@@ -119,8 +119,12 @@ a{text-decoration:none;color:inherit}
 .schedule-row:nth-child(even){background:rgba(255,255,255,.03)}
 .schedule-row:nth-child(even):hover{background:rgba(255,255,255,.08)}
 .tag{display:inline-block;padding:5px 14px;border-radius:10px;font-size:1rem;font-weight:600;margin-right:4px;letter-spacing:.5px}
-.tag-p{background:rgba(196,169,97,.2);color:var(--gold)}
-.tag-g{background:rgba(196,30,36,.2);color:#E8333A}
+.tag-h{display:inline-block;padding:3px 8px;border-radius:6px;font-size:.85rem;font-weight:500;margin:2px 2px;letter-spacing:0}
+.tag-p,.tag-hp{background:rgba(196,169,97,.2);color:var(--gold)}
+.tag-g,.tag-hg{background:rgba(196,30,36,.15);color:#E8333A}
+.tag-hp{display:inline-block;padding:3px 8px;border-radius:6px;font-size:.85rem;font-weight:500;margin:2px 2px;letter-spacing:0}
+.tag-hg{display:inline-block;padding:3px 8px;border-radius:6px;font-size:.85rem;font-weight:500;margin:2px 2px;letter-spacing:0}
+.schedule-hours{display:flex;flex-wrap:wrap;gap:3px;align-items:center}
 
 /* DEPOIMENTOS */
 .depoimentos{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
@@ -305,12 +309,12 @@ Agendar Aula Grátis
 <div class="section-header"><div class="section-label">Agenda</div><div class="section-title">Horários</div><div class="section-divider"></div></div>
 <div class="schedule fade-up">
 <div class="schedule-head"><div>Dia</div><div>Horários</div><div>Tipo</div></div>
-<div class="schedule-row"><div>Segunda</div><div><span class="tag tag-p">07h</span> <span class="tag tag-p">10h</span> <span class="tag tag-p">16h</span> <span class="tag tag-p">17h</span> <span class="tag tag-p">18h</span> <span class="tag tag-p">19h</span></div><div><span class="tag tag-p">Personal</span></div></div>
-<div class="schedule-row"><div>Terça</div><div><span class="tag tag-g">07h</span> <span class="tag tag-g">10h</span> <span class="tag tag-g">13h</span> <span class="tag tag-g">14h</span> <span class="tag tag-g">16h</span> <span class="tag tag-g">17h</span> <span class="tag tag-g">18h</span> <span class="tag tag-g">19h</span></div><div><span class="tag tag-g">Grupo</span><span class="tag tag-p">Personal</span></div></div>
-<div class="schedule-row"><div>Quarta</div><div><span class="tag tag-p">07h</span> <span class="tag tag-p">10h</span> <span class="tag tag-p">16h</span> <span class="tag tag-p">17h</span> <span class="tag tag-p">18h</span> <span class="tag tag-p">19h</span></div><div><span class="tag tag-p">Personal</span></div></div>
-<div class="schedule-row"><div>Quinta</div><div><span class="tag tag-g">07h</span> <span class="tag tag-g">10h</span> <span class="tag tag-g">13h</span> <span class="tag tag-g">14h</span> <span class="tag tag-g">16h</span> <span class="tag tag-g">17h</span> <span class="tag tag-g">18h</span> <span class="tag tag-g">19h</span></div><div><span class="tag tag-g">Grupo</span><span class="tag tag-p">Personal</span></div></div>
-<div class="schedule-row"><div>Sexta</div><div><span class="tag tag-p">07h</span> <span class="tag tag-p">10h</span> <span class="tag tag-p">16h</span> <span class="tag tag-p">17h</span> <span class="tag tag-p">18h</span> <span class="tag tag-p">19h</span></div><div><span class="tag tag-p">Personal</span></div></div>
-<div class="schedule-row"><div>Sábado</div><div><span class="tag tag-p">07h</span> <span class="tag tag-p">08h</span> <span class="tag tag-p">09h</span> <span class="tag tag-p">10h</span> <span class="tag tag-g">11h</span></div><div><span class="tag tag-p">Personal</span><span class="tag tag-g">Grupo</span></div></div>
+<div class="schedule-row"><div>Segunda</div><div class="schedule-hours"><span class="tag-hp">07h</span><span class="tag-hp">08h</span><span class="tag-hp">09h</span><span class="tag-hp">10h</span><span class="tag-hp">11h</span><span class="tag-hp">14h</span><span class="tag-hp">15h</span><span class="tag-hg">16h</span><span class="tag-hg">17h</span><span class="tag-hp">18h</span><span class="tag-hp">19h</span><span class="tag-hg">20h</span></div><div><span class="tag tag-p">Personal</span><span class="tag tag-g">Grupo</span></div></div>
+<div class="schedule-row"><div>Terça</div><div class="schedule-hours"><span class="tag-hp">06h</span><span class="tag-hg">07h</span><span class="tag-hg">10h</span><span class="tag-hg">11h</span><span class="tag-hg">14h</span><span class="tag-hp">15h</span><span class="tag-hg">16h</span><span class="tag-hg">17h</span><span class="tag-hg">18h</span><span class="tag-hg">19h</span><span class="tag-hg">20h</span></div><div><span class="tag tag-g">Grupo</span><span class="tag tag-p">Personal</span></div></div>
+<div class="schedule-row"><div>Quarta</div><div class="schedule-hours"><span class="tag-hp">07h</span><span class="tag-hp">08h</span><span class="tag-hp">09h</span><span class="tag-hp">10h</span><span class="tag-hp">11h</span><span class="tag-hp">14h</span><span class="tag-hp">15h</span><span class="tag-hg">16h</span><span class="tag-hg">17h</span><span class="tag-hp">18h</span><span class="tag-hp">19h</span><span class="tag-hg">20h</span></div><div><span class="tag tag-p">Personal</span><span class="tag tag-g">Grupo</span></div></div>
+<div class="schedule-row"><div>Quinta</div><div class="schedule-hours"><span class="tag-hp">06h</span><span class="tag-hg">07h</span><span class="tag-hp">09h</span><span class="tag-hg">10h</span><span class="tag-hg">11h</span><span class="tag-hg">14h</span><span class="tag-hp">15h</span><span class="tag-hg">16h</span><span class="tag-hg">17h</span><span class="tag-hg">18h</span><span class="tag-hg">19h</span></div><div><span class="tag tag-g">Grupo</span><span class="tag tag-p">Personal</span></div></div>
+<div class="schedule-row"><div>Sexta</div><div class="schedule-hours"><span class="tag-hp">07h</span><span class="tag-hp">08h</span><span class="tag-hp">09h</span><span class="tag-hp">10h</span><span class="tag-hp">11h</span><span class="tag-hg">13h</span><span class="tag-hp">15h</span><span class="tag-hg">16h</span><span class="tag-hg">17h</span><span class="tag-hp">18h</span></div><div><span class="tag tag-p">Personal</span><span class="tag tag-g">Grupo</span></div></div>
+<div class="schedule-row"><div>Sábado</div><div class="schedule-hours"><span class="tag-hp">08h</span><span class="tag-hp">09h</span><span class="tag-hp">10h</span><span class="tag-hg">11h</span></div><div><span class="tag tag-p">Personal</span><span class="tag tag-g">Grupo</span></div></div>
 <div class="schedule-row"><div>Domingo</div><div style="color:var(--g6);font-style:italic">Fechado</div><div style="color:var(--g6)">—</div></div>
 </div>
 </div>
